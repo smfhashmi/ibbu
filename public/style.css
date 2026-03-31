@@ -1,28 +1,4 @@
-h2 {
-  color: red
-}
-
-.content {
-  display: flex;
-  flex-direction: rows;
-  align-items: center;
-  justify-content: center;
-}
-
-.ibrahim-content {
-  padding: 20px;
-  border: 1px dotted black;
-  margin: 15px;
-}
-
-.hashmi-content {
-  padding: 20px;
-  border: 1px dotted black;
-  margin: 15px;
-}
-
-.abdul-content {
-  padding: 20px;
-  border: 1px dotted black;
-  margin: 15px;
+.cooking-image {
+  width: 300px;
+  height: auto
 }
