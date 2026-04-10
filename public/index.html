@@ -7,33 +7,34 @@
   <title>Document</title>
 </head>
 <body>
-  <form action="">
-    <div>
-      <span id="name">Name</span>
-      <br>
-      <input type="text" name="name" id="enter name" placeholder="Enter your name">
+  <h1>Fill up the college profile</h1>
+
+  <form id="userForm">
+    <div class="card">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <br>
+        <input type="text" class="form-control" id="name" name="name" required placeholder="enter your name"/>
+      </div>
+      <div class="form-group">
+        <label for="age">Age:</label>
+        <br>
+        <input type="number" class="form-control" id="age" name="age" required placeholder="enter your age"/>
+      </div>
+      <div class="form-group">
+        <label for="mobile">Mobile</label>
+        <br>
+        <input type="text" class="form-control" id="mobile" name="mobile" required placeholder="enter your mobile number"/>
+      </div>
+      <button class="btn" type="submit">Submit</button>
     </div>
-    <br>
-    <div>
-      <span id="email">Email</span>
-      <br>
-      <input type="email" name="email" id="enter email" placeholder="Enter your email">
-    </div>
-    <br>
-    <div>
-      <span id="phone">Phone</span>
-      <br>
-      <input type="tel" name="phone" id="enter phone" placeholder="Enter your phone number">
-    </div>
-    <br>
-    <div>
-      <span id="Age">Age</span>
-      <br>
-      <input type="number" name="Age" id="enter age" placeholder="Enter your age">
-    </div>
-    <br>
-     <button type="submit">save and Submit</button>
   </form>
+
+
+  <div id="details">
+
+  </div>
+
   <script src="./index.js"></script>
 </body>
 </html>

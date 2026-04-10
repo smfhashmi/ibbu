@@ -1,4 +1,30 @@
-.cooking-image {
-  width: 300px;
-  height: auto
+.form-group {
+  padding: 10px;
+  margin: 15px;
+  border: 1px solid #ff6262;
+}
+
+.card {
+  padding: 15px
+  margin: 10px;
+  border: 1px solid #ff6262;
+  border-radius: 5px;
+}
+
+.btn {
+  padding: 10px 20px;
+  margin: 15px;
+  background-color: #ff6262;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.form-control {
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #ff6262;
+  border-radius: 5px;
+  width: 50%;
 }
