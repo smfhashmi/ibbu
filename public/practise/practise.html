@@ -4,56 +4,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./p.css">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <title>Document</title>
 </head>
 
 <body>
-    <h1> Fill in the Lecture Details</h1>
-    <form id="details">
-        <div class="info">
-            <div class="editing">
-                <label for="name">name:</label>
-                <br>
-                <input type="text" class="editing-control" id="name" name="name" placeholder="enter your name here">
-            </div>
-            <div class="editing">
-                <label for="subject">subject:</label>
-                <br>
-                <input type="text" class="editing-control" id="subject" subject="mathematics"
-                    placeholder="which subject">
-            </div>
-            <div class="editing">
-                <label for="hours per week">hours per week:</label>
-                <br>
-                <input type="text" class="editing-control" id="hoursperweek" period="number of hoursperweek"
-                    placeholder="hours per week">
-            </div>
-            <div class="editing">
-                <label for="gender">gender:</label>
-                <br>
-                <select name="gender" id="gender">
-                    <option value="Male">Male</option>
-                    <option value="Female">Female</option>
-                    <option value="Not Qualified">Not Qualified</option>
-                </select>
-            </div>
-            <div class="editing">
-                <label for="Highest Qualification">Highest Qualification</label>
-                <br>
-                <input type="radio" value="HighestQualification" name="HighestQualification"
-                    id="HighestQualification">SSC
-                <br>
-                <input type="radio" value="HighestQualification" name="HighestQualification"
-                    id="HighestQualification">BIE
-                <br>
-                <input type="radio" value="HighestQualification" name="HighestQualification"
-                    id="HighestQualification">Bachleors
-            </div>
-            <button class="btn" type="submit">sumbit</button>
-        </div>
+    <div class="container">
+        <h1> Fill in the Lecture Details</h1>
+        <form id="details">
+            <div class="info">
+                <div class="mb-3">
+                    <label for="name" class="form-label">name:</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="enter your name here">
+                </div>
+                <div class="mb-3">
+                    <label for="subject" class="form-label">subject:</label>
+                    <input type="text" class="form-control" id="subject" name="subject" placeholder="enter subject here">
+                </div>
+                <div class="mb-3">
+                    <label for="hours per week" class="form-label">hours per week:</label>
+                    <br>
+                    <input type="text" class="form-control" id="hoursperweek" name="hoursperweek"
+                        placeholder="hours per week">
+                </div>
+                <div class="mb-3">
+                    <label for="gender" class="form-label">gender:</label>
+                    <br>
+                    <select name="gender" id="gender" class="form-select">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Not Qualified">Not Qualified</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label class="form-check-label" for="Highest Qualification">
+                        Highest Qualification
+                    </label>
 
-    </form>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="ssc" id="ssc">
+                        <label class="form-check-label" for="ssc">
+                            SSC
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="bie" id="bie">
+                        <label class="form-check-label" for="bie">
+                            BIE
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="bachleors" id="bachleors">
+                        <label class="form-check-label" for="bachleors">
+                            Bachleors
+                        </label>
+                    </div>
+                </div>
+                <button class="btn btn-success" type="submit">sumbit</button>
+            </div>
+
+        </form>
+    </div>
     <div id="results"></div>
     <script src="./p.js"></script>
 </body>
